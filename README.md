@@ -56,5 +56,5 @@ Please open an issue or pull request in this repository.
 
 ## 📫 Contact
 
-If you're interested in collaborating, integrating Velim into an agent framework, or contributing to the protocol, feel free to (reach out)[sphenelabs.com].
+If you're interested in collaborating, integrating Velim into an agent framework, or contributing to the protocol, feel free to [reach out](sphenelabs.com).
 
