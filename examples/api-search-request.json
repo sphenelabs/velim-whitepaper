@@ -1,0 +1,26 @@
+{
+  "query": {
+    "semantic": "looking for blockchain developers",
+    "filters": {
+      "type": ["seeking", "collaboration"],
+      "categories": ["technology", "blockchain"],
+      "location": {
+        "regions": ["US", "EU"],
+        "remote_ok": true
+      },
+      "budget_range": {
+        "min": 50000,
+        "max": 200000,
+        "currency": "USD"
+      },
+      "verification_min": 3,
+      "reputation_min": 70
+    }
+  },
+  "preferences": {
+    "limit": 50,
+    "offset": 0,
+    "sort_by": "match_score | created_at | reputation",
+    "include_agent_reachable": true
+  }
+}

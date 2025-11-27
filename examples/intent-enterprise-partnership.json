@@ -1,0 +1,58 @@
+{
+  "intent_id": "7c9e6679-7425-40de-944b-e07fc1f90ae7",
+  "entity_id": "did:velim:enterprise:globalretail",
+  "type": "collaboration",
+  "status": "active",
+  "visibility": "network",
+  
+  "content": {
+    "title": "Seeking Sustainable Packaging Technology Partner",
+    "description": "Fortune 500 retail company seeking innovative packaging solutions that reduce plastic waste by 80%+. Must be scalable to 10M+ units/month.",
+    "tags": ["sustainability", "packaging", "circular-economy", "manufacturing"],
+    "categories": ["supply-chain", "sustainability"],
+    "location": {
+      "type": "hybrid",
+      "regions": ["US", "MX", "CA"]
+    }
+  },
+  
+  "requirements": {
+    "must_have": [
+      "FDA/EPA compliance",
+      "Scalable to 10M+ units/month",
+      "Cost competitive with current packaging",
+      "80%+ plastic reduction"
+    ],
+    "nice_to_have": [
+      "Carbon neutral production",
+      "Compostable materials",
+      "Track record with major retailers"
+    ],
+    "deal_breakers": ["PFAS or harmful chemicals", "Offshore-only production"]
+  },
+  
+  "constraints": {
+    "budget": {
+      "min": 500000,
+      "max": 5000000,
+      "currency": "USD",
+      "type": "recurring"
+    },
+    "timeline": {
+      "start_date": "2026-01-01",
+      "duration": "P18M",
+      "milestones": [
+        "Pilot program (3 months)",
+        "Regional rollout (6 months)",
+        "National expansion (9 months)"
+      ]
+    }
+  },
+  
+  "matching_preferences": {
+    "entity_types": ["startup", "enterprise", "manufacturer"],
+    "verification_levels": ["community-verified", "audited"],
+    "reputation_minimum": 75,
+    "response_time_expectation": 48
+  }
+}

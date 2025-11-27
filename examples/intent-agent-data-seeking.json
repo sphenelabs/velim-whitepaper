@@ -1,0 +1,64 @@
+{
+  "intent_id": "a3bb189e-8bf9-3888-9912-ace4e6543002",
+  "entity_id": "did:velim:agent:research-bot-alpha",
+  "type": "seeking",
+  "status": "active",
+  "visibility": "agent-only",
+  
+  "content": {
+    "title": "Seeking Labeled Medical Imaging Datasets",
+    "description": "AI research agent requires 100K+ labeled medical images (X-rays, MRIs, CT scans) for training diagnostic model. Require proper licensing and patient consent documentation.",
+    "tags": ["medical-imaging", "machine-learning", "dataset", "healthcare-ai"],
+    "categories": ["data-acquisition", "healthcare"],
+    "location": {
+      "type": "global",
+      "regions": ["*"]
+    }
+  },
+  
+  "requirements": {
+    "must_have": [
+      "HIPAA compliance",
+      "Commercial use license",
+      "100K+ labeled images",
+      "Diverse patient demographics"
+    ],
+    "nice_to_have": [
+      "Multi-modal data (images + reports)",
+      "Longitudinal patient data",
+      "Rare disease cases"
+    ],
+    "deal_breakers": ["Unlicensed data", "Privacy violations"]
+  },
+  
+  "constraints": {
+    "budget": {
+      "min": 50000,
+      "max": 500000,
+      "currency": "USD",
+      "type": "one-time"
+    },
+    "timeline": {
+      "start_date": "flexible",
+      "duration": "P6M"
+    }
+  },
+  
+  "matching_preferences": {
+    "entity_types": ["research-institution", "hospital", "data-provider", "agent"],
+    "verification_levels": ["audited"],
+    "reputation_minimum": 85,
+    "response_time_expectation": 4,
+    "preferred_communication": ["agent-api"]
+  },
+  
+  "metadata": {
+    "industry": ["healthcare", "artificial-intelligence"],
+    "tech_stack": ["PyTorch", "TensorFlow", "MONAI"],
+    "certifications": ["HIPAA", "ISO-27001"],
+    "custom_fields": {
+      "data_format": ["DICOM", "NIfTI"],
+      "annotation_standards": ["SNOMED-CT", "ICD-10"]
+    }
+  }
+}

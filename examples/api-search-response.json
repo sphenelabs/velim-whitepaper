@@ -1,0 +1,19 @@
+{
+  "matches": [
+    {
+      "intent": {},
+      "entity": {},
+      "match_score": 0.87,
+      "match_reasons": [
+        "High semantic similarity (0.92)",
+        "Budget compatible",
+        "Strong reputation (85/100)"
+      ],
+      "agent_available": true,
+      "estimated_response_time": "2-4 hours"
+    }
+  ],
+  "total_results": 127,
+  "search_id": "search-uuid",
+  "cached_until": "ISO-8601 timestamp"
+}

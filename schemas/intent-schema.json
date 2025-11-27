@@ -1,0 +1,78 @@
+{
+  "intent_id": "uuid-v4",
+  "entity_id": "did:velim:entity-identifier",
+  "version": "1.0.0",
+  "created_at": "ISO-8601 timestamp",
+  "updated_at": "ISO-8601 timestamp",
+  "expires_at": "ISO-8601 timestamp or null",
+  "status": "active | paused | fulfilled | expired",
+  "type": "seeking | offering | collaboration | announcement",
+  "visibility": "public | network | private | agent-only",
+  
+  "content": {
+    "title": "string (max 200 chars)",
+    "description": "string (max 2000 chars)",
+    "tags": ["array", "of", "semantic", "tags"],
+    "categories": ["primary-category", "secondary-category"],
+    "location": {
+      "type": "remote | hybrid | on-site | region | global",
+      "regions": ["ISO-3166 country codes or region identifiers"],
+      "coordinates": {
+        "lat": "decimal",
+        "lon": "decimal",
+        "radius_km": "number"
+      }
+    }
+  },
+  
+  "requirements": {
+    "must_have": ["array", "of", "required", "attributes"],
+    "nice_to_have": ["array", "of", "preferred", "attributes"],
+    "deal_breakers": ["array", "of", "exclusions"]
+  },
+  
+  "constraints": {
+    "budget": {
+      "min": "number",
+      "max": "number",
+      "currency": "ISO-4217 code",
+      "type": "one-time | recurring | equity | revenue-share | barter"
+    },
+    "timeline": {
+      "start_date": "ISO-8601 or 'immediate' or 'flexible'",
+      "duration": "duration in ISO-8601 format",
+      "milestones": ["array", "of", "milestone", "objects"]
+    },
+    "capacity": {
+      "available_hours_per_week": "number or null",
+      "team_size": "number or null",
+      "commitment_level": "full-time | part-time | contract | advisory"
+    }
+  },
+  
+  "matching_preferences": {
+    "entity_types": ["startup", "enterprise", "nonprofit", "individual", "agent", "community"],
+    "verification_levels": ["self-attested", "community-verified", "audited"],
+    "reputation_minimum": "0-100 score",
+    "response_time_expectation": "duration in hours",
+    "preferred_communication": ["email", "calendar", "agent-api", "messaging"]
+  },
+  
+  "metadata": {
+    "industry": ["array", "of", "industry", "codes"],
+    "tech_stack": ["array", "of", "technologies"],
+    "certifications": ["array", "of", "relevant", "certifications"],
+    "languages": ["ISO-639 language codes"],
+    "custom_fields": {
+      "key": "value pairs for domain-specific extensions"
+    }
+  },
+  
+  "attestation": {
+    "chain": "chain-identifier (ethereum | polygon | solana | arweave | ipfs)",
+    "attestation_id": "chain-specific attestation reference",
+    "proof": "cryptographic proof of attestation",
+    "anchored_at": "ISO-8601 timestamp",
+    "anchor_tx": "transaction hash or reference"
+  }
+}

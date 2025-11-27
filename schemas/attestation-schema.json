@@ -1,0 +1,25 @@
+{
+  "id": "string",
+  "schema_id": "string",
+  "attester": "DID",
+  "subject": "DID",
+  "claim_type": "AttestationClaimType",
+  "claim_data": {},
+  "timestamp": "ISO-8601",
+  "expiration": "ISO-8601 | null",
+  "revoked": "boolean",
+  "revocation_reason": "string | null",
+  
+  "proof": {
+    "method": "ecdsa | eddsa | rsa | bls",
+    "signature": "string",
+    "public_key": "string"
+  },
+  
+  "chain_anchor": {
+    "chain": "string",
+    "transaction_id": "string",
+    "block_number": "number",
+    "block_timestamp": "ISO-8601"
+  }
+}

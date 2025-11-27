@@ -1,0 +1,46 @@
+{
+  "intent_id": "550e8400-e29b-41d4-a716-446655440000",
+  "entity_id": "did:velim:startup:techcorp",
+  "type": "seeking",
+  "status": "active",
+  "visibility": "public",
+  
+  "content": {
+    "title": "Seeking Series A Investment for AI-Powered HR Tech",
+    "description": "We're building an AI platform that automates employee onboarding and reduces HR workload by 60%. Looking for $5M Series A from mission-aligned investors.",
+    "tags": ["AI", "HR Tech", "SaaS", "Series A", "B2B"],
+    "categories": ["funding", "technology"],
+    "location": {
+      "type": "remote",
+      "regions": ["US", "EU"],
+      "coordinates": null
+    }
+  },
+  
+  "requirements": {
+    "must_have": ["Experience in HR tech", "Check size $3M-$7M", "Active involvement"],
+    "nice_to_have": ["Network in Fortune 500", "AI expertise", "Follow-on capital"],
+    "deal_breakers": ["Competing portfolio companies", "Required board seat"]
+  },
+  
+  "constraints": {
+    "budget": {
+      "min": 3000000,
+      "max": 7000000,
+      "currency": "USD",
+      "type": "equity"
+    },
+    "timeline": {
+      "start_date": "immediate",
+      "duration": "P3M",
+      "milestones": ["Initial meetings", "Due diligence", "Term sheet", "Closing"]
+    }
+  },
+  
+  "matching_preferences": {
+    "entity_types": ["vc-firm", "angel-investor", "corporate-vc"],
+    "verification_levels": ["audited"],
+    "reputation_minimum": 80,
+    "response_time_expectation": 24
+  }
+}

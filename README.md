@@ -9,6 +9,35 @@ These intent-signals form a verifiable, interoperable **intent layer** powering 
 
 ---
 
+## 📚 Repository Structure
+
+```
+velim-whitepaper/
+├── velim_v1.md           # Complete protocol whitepaper
+├── schemas/              # JSON schema definitions
+│   ├── intent-schema.json
+│   ├── entity-profile-schema.json
+│   ├── attestation-schema.json
+│   └── README.md
+├── examples/             # Example intents and API requests
+│   ├── intent-seeking-investment.json
+│   ├── intent-enterprise-partnership.json
+│   ├── intent-agent-data-seeking.json
+│   ├── api-search-request.json
+│   ├── api-search-response.json
+│   └── README.md
+├── code/                 # SDK examples and implementations
+│   ├── publish-intent.py
+│   ├── discover-matches.ts
+│   ├── agent-communication.py
+│   ├── reputation-calculation.py
+│   ├── spam-detection.py
+│   └── README.md
+└── README.md            # This file
+```
+
+---
+
 ## 🌟 What Velim Enables
 
 - **Structured wishes**: Entities express interests, collaboration needs, capabilities, and preferences.  
@@ -23,12 +52,12 @@ Velim transforms intention into infrastructure—turning wishes into signals and
 
 ## 🚀 Key Features
 
-- **Structured Intent Schema**  
-- **Entity Profiles & Claimable Ghost Profiles**  
-- **Chain-Agnostic Proof Anchoring**  
-- **Agent Query & Matching API**  
-- **Reputation & Reliability Scoring**  
-- **DAO Governance (optional)**  
+- **Structured Intent Schema** - Standardized format for expressing wants and capabilities
+- **Entity Profiles & Claimable Ghost Profiles** - Verifiable identity and reputation
+- **Chain-Agnostic Proof Anchoring** - Works with Ethereum, Arweave, Solana, IPFS, and more
+- **Agent Query & Matching API** - RESTful APIs for discovery and agent-to-agent communication
+- **Reputation & Reliability Scoring** - Multi-dimensional scoring incentivizes quality
+- **DAO Governance** - Community-driven protocol evolution
 
 ---
 
@@ -41,7 +70,23 @@ Velim transforms intention into infrastructure—turning wishes into signals and
 - Startup/business visibility  
 - Talent & project matching  
 - Autonomous workflows  
-- Decentralized identity & intent networks  
+- Decentralized identity & intent networks
+
+---
+
+## 🏗️ Getting Started
+
+### Read the Whitepaper
+Start with [`velim_v1.md`](./velim_v1.md) for the complete protocol specification.
+
+### Explore Schemas
+Check [`schemas/`](./schemas/) for JSON schema definitions you can use in your implementation.
+
+### Review Examples
+Browse [`examples/`](./examples/) for real-world intent examples and API request/response formats.
+
+### Try Code Examples
+See [`code/`](./code/) for SDK usage examples in Python and TypeScript.
 
 ---
 

@@ -1,0 +1,133 @@
+{
+  "entity_id": "did:velim:entity-identifier",
+  "version": "1.0.0",
+  "created_at": "ISO-8601 timestamp",
+  "updated_at": "ISO-8601 timestamp",
+  "entity_type": "individual | organization | community | agent | hybrid",
+  
+  "identity": {
+    "name": "string",
+    "legal_name": "string (for organizations)",
+    "display_name": "string",
+    "bio": "string (max 1000 chars)",
+    "avatar_uri": "IPFS or CDN URI",
+    "banner_uri": "IPFS or CDN URI",
+    "website": "URL",
+    "social_links": {
+      "github": "URL",
+      "twitter": "URL",
+      "linkedin": "URL",
+      "discord": "URL",
+      "custom": ["array", "of", "link", "objects"]
+    }
+  },
+  
+  "verification": {
+    "status": "unverified | pending | self-attested | community-verified | audited",
+    "verification_level": "0-5 scale",
+    "methods": [
+      {
+        "type": "domain | email | social | legal | audit",
+        "verified_at": "ISO-8601 timestamp",
+        "verifier": "did:velim:verifier-id",
+        "proof": "cryptographic proof",
+        "expires_at": "ISO-8601 timestamp or null"
+      }
+    ],
+    "badges": [
+      {
+        "badge_id": "string",
+        "name": "string",
+        "issued_by": "did:velim:issuer-id",
+        "issued_at": "ISO-8601 timestamp",
+        "criteria": "string",
+        "proof_uri": "URI to badge proof"
+      }
+    ]
+  },
+  
+  "capabilities": {
+    "offerings": ["array", "of", "services/products"],
+    "expertise": ["array", "of", "skill", "tags"],
+    "resources": {
+      "team_size": "number or range",
+      "funding_stage": "string (for organizations)",
+      "infrastructure": ["array", "of", "available", "resources"]
+    },
+    "availability": {
+      "timezone": "IANA timezone identifier",
+      "working_hours": "structured schedule",
+      "response_time_sla": "duration in hours"
+    }
+  },
+  
+  "reputation": {
+    "velim_score": "0-100",
+    "component_scores": {
+      "responsiveness": "0-100",
+      "accuracy": "0-100",
+      "collaboration_quality": "0-100",
+      "update_frequency": "0-100",
+      "verification_level": "0-100"
+    },
+    "statistics": {
+      "total_intents": "number",
+      "active_intents": "number",
+      "fulfilled_intents": "number",
+      "successful_matches": "number",
+      "response_rate": "0-1 decimal",
+      "average_response_time": "duration in hours",
+      "collaboration_success_rate": "0-1 decimal"
+    },
+    "endorsements": [
+      {
+        "endorser_id": "did:velim:entity-id",
+        "category": "string",
+        "comment": "string (max 500 chars)",
+        "timestamp": "ISO-8601 timestamp",
+        "attestation": "cryptographic proof"
+      }
+    ]
+  },
+  
+  "agent_interface": {
+    "enabled": "boolean",
+    "api_endpoint": "URL",
+    "authentication": {
+      "method": "oauth2 | api-key | jwt | did-auth",
+      "public_key": "cryptographic public key"
+    },
+    "capabilities": ["discovery", "scheduling", "negotiation", "reporting"],
+    "model_info": {
+      "provider": "string",
+      "model_version": "string",
+      "specializations": ["array"]
+    }
+  },
+  
+  "privacy_settings": {
+    "profile_visibility": "public | network | private",
+    "intent_visibility_default": "public | network | private | agent-only",
+    "contact_preferences": {
+      "allow_cold_outreach": "boolean",
+      "require_introduction": "boolean",
+      "preferred_channels": ["array"]
+    },
+    "data_retention": {
+      "keep_history_days": "number or 'indefinite'",
+      "anonymize_after_days": "number or null"
+    }
+  },
+  
+  "attestation": {
+    "profile_attestations": [
+      {
+        "chain": "chain-identifier",
+        "attestation_id": "chain-specific reference",
+        "field": "which field is attested",
+        "attested_at": "ISO-8601 timestamp",
+        "attester": "did:velim:entity-id"
+      }
+    ]
+  }
+}
